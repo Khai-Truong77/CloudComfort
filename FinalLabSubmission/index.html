@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cloud Comfort - Durable, Comfy, and Breathable</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./sampleimages/favicon.ico">
+    </head>
+<!-- Ongoing Events Bar -->
+<header>
+    <div class="EventBar">
+        <h6> Free Worldwide Shipping on orders $50+ </h6>
+        <a href="Login.html">Login /</a>
+        <a href="Sign Up.html">Sign Up /</a>
+        <a href="CCemail">Contact:CloudComfort@gmail.com</a>
+    </div>
+</header>
+<!--Slides Script -->
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+<!-- WebForm Script -->
+<script>
+    function validateInput(){
+        var x = document.forms["SubscriptionForm"]["email"].value;
+        if (!x.includes("@")){
+            alert("The email you have entered is invald.");
+            return false;
+        }
+        alert("Your form was successfully processed.")
+        return true;
+    }
+</script>
+<body>
+<!--Banner -->
+    <div>
+        <div class="banner">
+            <img class="magnifyingGlass" src="./sampleimages/magnifyingglass.svg" alt="glasslogo">
+            <img class="shoppingCart" src="./sampleimages/shoppingbag.svg" alt="shoppingcartlogo">
+            <img class="Logo1" src="./sampleimages/cclogo0.3.PNG" alt="BrandLogo">
+        </div>
+    </div>
+
+<!--Navigation Bar-->
+<nav class="w3-bar">
+    <div class="nav">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    </div>
+
+    <div class="nav">
+        <a href="Men.html" class="w3-bar-item w3-button">Men</a>
+    </div>
+
+    <div class="nav">
+        <a href="Woman.html" class="w3-bar-item w3-button">Woman</a>
+    </div>
+
+    <div class="nav">
+        <a href="Children.html" class="w3-bar-item w3-button">Children</a>
+    </div>
+<br>
+<br>
+<!-- Text -->
+<div class="Subheader">
+    <h1> The Proprietary Blend that Brings You Comfort</h1>    
+</div>
+<br>
+ <!-- Slideshow container -->
+ <div class="slideshow-container">
+
+<!-- Images with number and caption text -->
+    <div class="mySlides fade">
+      <img class="slide1" src="./sampleimages/slide4.png" alt="slide1">
+    </div>
+  
+    <div class="mySlides fade">
+      <img class="slide2" src="./sampleimages/bambooslide.jpg" alt="slide2">
+    </div>
+  
+    <div class="mySlides fade">
+      <img class="slide3" src="./sampleimages/shirtslide3.jpg" alt="slide3">
+    </div>
+
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div> 
+<br>
+<br>
+<div class="textbox1">
+<h3 class="mission1">
+    Our Mission:
+</h3>
+    <p>Cloud Comfort has been established since 2015 with the goal of making breathable clothing accessible for all those in need of relief from heat and moisture. Let us help you. 
+        Browse our exensive selection and sign up for our newsletter to save on your first purchase.
+    </p>
+</div>
+<hr>
+<!--<img class="background1" src="./sampleimages/background2.jpg" alt="background1"> -->
+<!--Web Subscription Form-->
+<br>
+<div class="w3-container2" id="w3-container2">
+    <form id="SubscriptionForm">
+        <table>
+            <h4 class="paymentHeader">We accept the following forms of payment:</h4>
+            <h3>Join Our E-mail Newsletter for 10% Off Your First Order.</h3>
+            <p>You'll gain access to news about product releases as well as coupons for events and your birthday.</p>
+            <img class="afterpay" src="sampleimages/afterpaylogo.png" alt="afterpaylogo">
+            <img class="paypal" src="sampleimages/paypallogo.png" alt="paypallogo">
+            <img class="creditcards" src="sampleimages/creditcards.png" alt="creditcardlogos">
+
+            <tr>
+                <td><label for="fname">First Name:</label><input type="text" name="fname" tabindex="2" size="20" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name:<label><input type="text" name="lname" tabindex="3" size="20" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label><input type="text" name="email" tabindex="4" size="25"></td>
+            </tr>
+            <tr>
+                <td><label for="Bdate">Birthday:</label><input type="date" name="sdate" tabindex="5" size="25"></td>
+            </tr>
+            <td>
+                <input type="button" name="SubmitButton" value="Join Newsletter" onclick="return validateInput()">
+            </td>
+        </table>
+    </form>
+</div>
+
+<footer class="w3-container" id="w3-container">
+    <div class="footerMenu">
+        <a href="AboutUs.html" class="w3-bar-item w3-button">About Us</a>
+    </div>
+
+    <div class="footerMenu">
+        <a href="Leave a Review" class="w3-bar-item w3-button">Review Us</a>
+    </div>
+
+    <div class="footerMenu">
+        <a href="Return Policy" class="w3-bar-item w3-button">Returns and Exchanges</a>
+    </div>
+
+    <div class="footerMenu">
+        <a href="ContactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+</footer>    
+<script>
+showSlides(slideIndex);
+</script>
+</body>
+</html>
